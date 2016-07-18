@@ -53,3 +53,13 @@ func validBetId(betId int) bool {
 func validAffiliateId(affiliateId int) bool {
 	return affiliateId >= 0 && affiliateId < NumAffiliates
 }
+
+func betsByUser(userId int) Bets {
+	var userBets Bets
+	for i := 0; i < NumBets; i++ {
+		if bets[i].UserId == userId {
+			userBets = append(userBets, bets[i])
+		}
+	}
+	return userBets
+}

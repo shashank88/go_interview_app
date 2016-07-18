@@ -31,16 +31,16 @@ var routes = Routes{
 		AffiliateIndex,
 	},
 	Route{
-		"BetIndex",
-		"GET",
-		"/bets",
-		BetIndex,
-	},
-	Route{
 		"UserShow",
 		"GET",
 		"/users/{userId}",
 		UserShow,
+	},
+	Route{
+		"UserBetShow",
+		"GET",
+		"/users/{userId}/bets",
+		UserBetShow,
 	},
 	Route{
 		"BetShow",
