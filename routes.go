@@ -42,4 +42,16 @@ var routes = Routes{
 		"/users/{userId}",
 		UserShow,
 	},
+	Route{
+		"BetShow",
+		"GET",
+		"/bets/{betId}",
+		BetShow,
+	},
+	Route{
+		"AffiliateShow",
+		"GET",
+		"/affiliates/{affiliateId}",
+		AffiliateShow,
+	},
 }

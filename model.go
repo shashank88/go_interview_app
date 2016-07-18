@@ -14,7 +14,7 @@ type User struct {
 type Bet struct {
 	Id        int       `json:"id"`
 	UserId    int       `json:"user_id"`
-	Amount    int       `json:"amount"`
+	Amount    float32   `json:"amount"`
 	Stake     float32   `json:"stake"`
 	Timestamp time.Time `json:"timestamp"`
 	Result    bool      `'json:result'`

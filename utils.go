@@ -45,3 +45,11 @@ func loadFileData() ([]string, []string) {
 func validUserId(userId int) bool {
 	return userId >= 0 && userId < NumUsers
 }
+
+func validBetId(betId int) bool {
+	return betId >= 0 && betId < NumBets
+}
+
+func validAffiliateId(affiliateId int) bool {
+	return affiliateId >= 0 && affiliateId < NumAffiliates
+}
