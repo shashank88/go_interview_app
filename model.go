@@ -12,12 +12,12 @@ type User struct {
 }
 
 type Bet struct {
-	Id        int       `json:"id"`
-	UserId    int       `json:"user_id"`
-	Amount    float32   `json:"amount"`
-	Stake     float32   `json:"stake"`
-	Timestamp time.Time `json:"timestamp"`
-	Result    bool      `'json:result'`
+	Id             int       `json:"id"`
+	UserId         int       `json:"user_id"`
+	Amount         float32   `json:"amount"`
+	PercentageOdds int       `json:"percentage_odds"`
+	Timestamp      time.Time `json:"timestamp"`
+	Result         bool      `'json:result'`
 }
 
 type Affiliate struct {
