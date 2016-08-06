@@ -14,6 +14,11 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	t.Execute(w, nil)
 }
 
+func Bonus(w http.ResponseWriter, r *http.Request) {
+	t, _ := template.ParseFiles("bonus_question.html")
+	t.Execute(w, nil)
+}
+
 func UserIndex(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)

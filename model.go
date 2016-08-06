@@ -17,7 +17,7 @@ type Bet struct {
 	Amount         float32   `json:"amount"`
 	PercentageOdds int       `json:"percentage_odds"`
 	Timestamp      time.Time `json:"timestamp"`
-	Result         bool      `'json:result'`
+	Result         bool      `json:"result"`
 }
 
 type Affiliate struct {
